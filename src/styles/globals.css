@@ -20,6 +20,14 @@ html {
 }
 
 body {
+    background-color: #ecf0f3;
     /* color: rgb(var(--foreground-rgb)); */
     /* background: linear-gradient( to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+}
+
+button {
+    background-image: linear-gradient(rgb(86 81 229), rgb(80 60 220));
+    padding: 45px;
+    border-radius: 10px;
+    color: white;
 }

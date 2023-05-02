@@ -7,7 +7,7 @@ import adminpanelReact from "../../public/assests/adminpanelReact.png";
 import ProjectItems from "./ProjectItems";
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className="w-full ">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest
          uppercase text-[#5651e5]">
@@ -15,9 +15,9 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-       <ProjectItems title="ecommerce" backgroundImg={okala} projectUrl="/property" language="ReactJs&NextJs" />
-       <ProjectItems title="admin panel" backgroundImg={adminpanelAngular} projectUrl="/property" language="Angular" />
-       <ProjectItems title="admin panel" backgroundImg={adminpanelReact} projectUrl="/property" language="ReactJs" />
+       <ProjectItems title="ecommerce" backgroundImg={okala} projectUrl="/okalaSite" language="ReactJs&NextJs" />
+       <ProjectItems title="admin panel" backgroundImg={adminpanelAngular} projectUrl="/angularAdminPanel" language="Angular" />
+       <ProjectItems title="admin panel" backgroundImg={adminpanelReact} projectUrl="/reactAdminPanel" language="ReactJs" />
 
       </div>
       </div>
