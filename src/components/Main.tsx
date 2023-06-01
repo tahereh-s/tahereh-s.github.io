@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from './Image'
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import {  FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import image1 from '../../public/assests/me/3.jpg'
 
 const Main = () => {
     return (
@@ -20,6 +22,9 @@ const Main = () => {
                     I'm a front-end web developer specializing in building (and occasionally designing) expectional 
                     digital experiences. Currently, I'm focused on responsive front-end web applications while learning back-end technologies.
                 </p>
+                <div className="flex">
+                <Image imageUrl="/assests/me/1.jpg" title="x" description="y" />
+                </div>
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaLinkedinIn />
