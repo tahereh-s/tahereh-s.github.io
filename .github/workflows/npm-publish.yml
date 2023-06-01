@@ -27,6 +27,6 @@ jobs:
         uses: taheresl/portfolio
         with:
           BRANCH: public # The branch the action will deploy to
-          FOLDER: out 
+          FOLDER: dist 
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
