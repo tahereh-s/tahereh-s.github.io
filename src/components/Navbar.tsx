@@ -4,27 +4,27 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
 const Navbar = () => {
   const [nav, setNav] = useState(true);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
-const router=useRouter()
+  const router = useRouter()
   useEffect(() => {
-if(
-  router.asPath=='/okalaSite'||
-  router.asPath=='/angularAdminPanel'||
-  router.asPath=='/reactAdminPanel'
-){
-  
-  setNavBg('transparent');
-  setLinkColor('#ecf0f3')
-}
-else{
-  setNavBg('#ecf0f3');
-  setLinkColor('#1f2937')
-}
+    if (
+      router.asPath == '/okalaSite' ||
+      router.asPath == '/angularAdminPanel' ||
+      router.asPath == '/reactAdminPanel'
+    ) {
+
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3')
+    }
+    else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937')
+    }
   }, [router]);
   useEffect(() => {
     const handleShadow = () => {
@@ -41,7 +41,7 @@ else{
   };
   return (
     <div
-      style={{backgroundColor:`${navBg}`}}
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -51,10 +51,10 @@ else{
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           .{" "}
-          <Image src="/vercel.svg" alt="/" width={100} height={100} priority />
+          <Image src="/tt.svg" alt="/" width={100} height={100} priority />
         </Link>
         <div>
-          <ul style={{color:`${linkColor}`}} className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">home</li>
             </Link>
@@ -93,13 +93,13 @@ else{
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-              <Image
-                src="/vercel.svg"
-                alt="/"
-                width={87}
-                height={35}
-                priority
-              />
+                <Image
+                  src="/tt.svg"
+                  alt="/"
+                  width={87}
+                  height={35}
+                  priority
+                />
               </Link>
               <div
                 onClick={handelNav}
@@ -117,19 +117,19 @@ else{
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={()=>setNav(false)} className="py-4 text-sm">Home</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">Home</li>
               </Link>
               <Link href="/#about">
-                <li onClick={()=>setNav(false)} className="py-4 text-sm">About</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">About</li>
               </Link>
               <Link href="/#skills">
-                <li onClick={()=>setNav(false)} className="py-4 text-sm">skills</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">skills</li>
               </Link>
               <Link href="/#projects">
-                <li onClick={()=>setNav(false)}className="py-4 text-sm">projects</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">projects</li>
               </Link>
               <Link href="/#contact">
-                <li onClick={()=>setNav(false)} className="py-4 text-sm">contact</li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">contact</li>
               </Link>
             </ul>
             <div className="pt-40">
@@ -138,13 +138,21 @@ else{
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link href={'https://www.linkedin.com/in/tahereh-salemi'}>
+                    <FaLinkedinIn />
+                  </Link>
+
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <Link href={'https://github.com/taheresl'}>
+                    <FaGithub />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <Link href="mailto:taherehsalemi1991@gmail.com">
                   <AiOutlineMail />
+                  </Link>
+                  
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsFillPersonLinesFill />
