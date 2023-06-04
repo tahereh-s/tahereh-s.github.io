@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
@@ -17,7 +18,7 @@ const ContactUs = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
                   className="rounded-xl h-full w-full hover:scale-105 ease-in duration-300"
                   src="/assests/contactUs.jpg"
                   alt=""
@@ -28,7 +29,7 @@ const ContactUs = () => {
                 <p>Front-End Developer</p>
                 <p className="py-2">
                   I am available for freelance or full-time positions. Contact
-                  me and let's talk.
+                  me and lets talk.
                 </p>
               </div>
               <div>

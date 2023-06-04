@@ -4,26 +4,26 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router"
 const Navbar = () => {
   const [nav, setNav] = useState(true);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter()
   useEffect(() => {
     if (
-      router.asPath == '/okalaSite' ||
-      router.asPath == '/angularAdminPanel' ||
-      router.asPath == '/reactAdminPanel'
+      router.asPath == "/okalaSite" ||
+      router.asPath =="/angularAdminPanel" ||
+      router.asPath == "/reactAdminPanel"
     ) {
 
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3')
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3")
     }
     else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937')
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937")
     }
   }, [router]);
   useEffect(() => {
@@ -111,7 +111,7 @@ const Navbar = () => {
           </div>
           <div className="border-b border-gray-300 my-4">
             <p className="w-[85%] md:w-[90%] my-4">
-              Let's build something legendary together
+              Lets build something legendary together
             </p>
           </div>
           <div className="py-4 flex flex-col">
@@ -134,17 +134,17 @@ const Navbar = () => {
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widset text-[#5651e5]">
-                Let's connect
+                Lets connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <Link href={'https://www.linkedin.com/in/tahereh-salemi'}>
+                  <Link href={"https://www.linkedin.com/in/tahereh-salemi"}>
                     <FaLinkedinIn />
                   </Link>
 
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <Link href={'https://github.com/taheresl'}>
+                  <Link href={"https://github.com/taheresl"}>
                     <FaGithub />
                   </Link>
                 </div>

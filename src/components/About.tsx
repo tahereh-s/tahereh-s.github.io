@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-// import laptop from '../../public/assests/laptop.png'
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex item-center py-16">
@@ -8,7 +7,7 @@ const About = () => {
         <div className="col-span-2">
           <p className=" uppercase text-xl tracking-widest text-[#5651e5]">About </p>
           <h2 className="py-2">Who I Am</h2>
-          <p className="py-2 text-gray-600"> // I am not your normal developer </p>
+          <p className="py-2 text-gray-600">  I am not your normal developer </p>
           <p className="py-2 text-gray-600">
             I have spent the last 4 years in the fire service working as a
             professional firefighter & paramedic. 1 have always had a knack for
@@ -18,7 +17,7 @@ const About = () => {
             turned into a love for programming.
           </p>
           <p className="py-2 text-gray-600">
-          Fascinated with how intricate
+            Fascinated with how intricate
             programming can be I was quickly drawn to learn more. I started
             learning javascript and was even more enthused with making websites
             interactive. I then started freelancing for e-commerce companies on
@@ -28,9 +27,7 @@ const About = () => {
           <p className="py-2 text-gray-600 underLine cursor-pointer">check out some of my latest project</p>
         </div>
         <div className="w-full h-auto m-auto shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            {/* <img src="../../public/assests/laptop.png" alt="/" /> */}
-           
-            <img className="rounded-xl" src="/assests/laptop.jpg" alt="/"  />
+          <Image className="rounded-xl" src="/assests/laptop.jpg" alt="/" />
         </div>
       </div>
     </div>

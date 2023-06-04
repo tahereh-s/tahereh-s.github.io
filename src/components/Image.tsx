@@ -1,15 +1,17 @@
 import React from 'react';  
+import Image from "next/image";
 interface Props{
     imageUrl:any;
     title?:string;
     description?:string
+    alt?:any
 }
-const Image = (props:Props) => {
+const ImageComponent = (props:Props) => {
     return (
         <div className="container">
                 <div className="box">
                         <div className="imgBx">
-                            <img src={props.imageUrl} />
+                            <Image src={props.imageUrl} alt={props.alt}/>
                         </div>
                         <div className="content">
                             <div>
@@ -28,4 +30,4 @@ const Image = (props:Props) => {
     );
 }
 
-export default Image;
+export default ImageComponent;
