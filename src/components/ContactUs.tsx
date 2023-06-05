@@ -21,6 +21,8 @@ const ContactUs = () => {
                 <Image
                   className="rounded-xl h-full w-full hover:scale-105 ease-in duration-300"
                   src="/assests/contactUs.jpg"
+                  width={100}
+                  height={100}
                   alt=""
                 />
               </div>

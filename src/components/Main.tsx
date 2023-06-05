@@ -22,7 +22,7 @@ const Main = () => {
                     digital experiences. Currently, I am focused on responsive front-end web applications while learning back-end technologies.
                 </p>
                 <div className="flex">
-                <ImageComponent imageUrl="/assests/me/1.jpg" title="x" description="y" alt="personal" />
+                <ImageComponent imageUrl="/assests/me/1.jpg" title="x" description="y" alt="personal"  />
                 </div>
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
