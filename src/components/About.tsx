@@ -26,9 +26,9 @@ const About = () => {
           </p>
           <p className="py-2 text-gray-600 underLine cursor-pointer">check out some of my latest project</p>
         </div>
-        <div className="w-full h-auto m-auto shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        {/* <div className="w-full h-auto m-auto shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image className="rounded-xl" src="/assests/laptop.jpg" alt="/" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
