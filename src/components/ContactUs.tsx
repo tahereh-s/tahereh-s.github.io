@@ -4,7 +4,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 const ContactUs = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
@@ -38,13 +38,19 @@ const ContactUs = () => {
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <Link href={"https://www.linkedin.com/in/tahereh-salemi"}>
+                      <FaLinkedinIn />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
+                    <Link href={"https://github.com/tahereh-s"}>
+                      <FaGithub />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
+                    <Link href="mailto:taherehsalemi1991@gmail.com">
+                      <AiOutlineMail />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <BsFillPersonLinesFill />
@@ -61,24 +67,24 @@ const ContactUs = () => {
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label htmlFor="" className="uppercase text-sm py-2">Name</label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text"/>
+                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
                   </div>
                   <div className="flex flex-col">
                     <label htmlFor="" className="uppercase text-sm py-2">phone Number</label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text"/>
+                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                <label htmlFor="" className="uppercase text-sm py-2">email </label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="email"/>
+                  <label htmlFor="" className="uppercase text-sm py-2">email </label>
+                  <input className="border-2 rounded-lg p-3 flex border-gray-300" type="email" />
                 </div>
                 <div className="flex flex-col py-2">
-                <label htmlFor="" className="uppercase text-sm py-2">subject </label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text"/>
+                  <label htmlFor="" className="uppercase text-sm py-2">subject </label>
+                  <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
                 </div>
                 <div className="flex flex-col py-2">
-                <label htmlFor="" className="uppercase text-sm py-2">messege </label>
-                    <textarea rows={10} className="border-2 rounded-lg p-3 
+                  <label htmlFor="" className="uppercase text-sm py-2">messege </label>
+                  <textarea rows={10} className="border-2 rounded-lg p-3 
                      border-gray-300"  ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 font-semibold mt-4 bg-[#5651e5] rounded-xl">Send Messege</button>
@@ -86,13 +92,13 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-       <div className="flex justify-center py-12">
-       <Link href="/">
-          <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-            <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
-          </div>
-        </Link>
-       </div>
+        <div className="flex justify-center py-12">
+          <Link href="/">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

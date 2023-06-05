@@ -3,6 +3,7 @@ import ImageComponent from './Image'
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import {  FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Main = () => {
     return (
@@ -26,13 +27,19 @@ const Main = () => {
                 </div>
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaLinkedinIn />
+                    <Link href={"https://www.linkedin.com/in/tahereh-salemi"}>
+                    <FaLinkedinIn />
+                  </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaGithub  />
+                    <Link href={"https://github.com/tahereh-s"}>
+                    <FaGithub />
+                  </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <AiOutlineMail />
+                    <Link href="mailto:taherehsalemi1991@gmail.com">
+                  <AiOutlineMail />
+                  </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <BsFillPersonLinesFill />
