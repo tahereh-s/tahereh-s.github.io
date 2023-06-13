@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Main = () => {
     return (
-        <div className="w-full h-screen text-center flex justify-center">
+        <div className="w-full h-screen text-center flex justify-center mb-20">
             <div className="max-w-[1240px] w-full h-full mx-2 p-auto ">
             <div>
                 <p className="uppercase text-sm tracking-widset text-gray-600">
