@@ -8,13 +8,13 @@ import Link from 'next/link';
 const Main = () => {
     return (
         <div className="w-full h-screen text-center flex justify-center">
-            <div className="max-w-[1240px] w-full h-full mx-2 p-auto flex justify-center items-center">
+            <div className="max-w-[1240px] w-full h-full mx-2 p-auto ">
             <div>
                 <p className="uppercase text-sm tracking-widset text-gray-600">
                     Lets build something together
                 </p>
-                <h1 className="py-4 text-gray-700 font-bold text-3xl">Hi I am <span className="text-[#5651e5]">Tahereh</span></h1>
-                <h1 className="py-2 text-gray-700 font-bold text-4xl">
+                <h1 className="py-4 text-gray-700 font-bold text-3xl mt-10">Hi I am <span className="text-[#5651e5]">Tahereh</span></h1>
+                <h1 className="py-2 text-gray-700 font-bold text-4xl ">
                     A Front-End Web Developer
                 </h1>
              
