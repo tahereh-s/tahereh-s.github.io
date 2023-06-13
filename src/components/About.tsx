@@ -1,28 +1,26 @@
-import Image from "next/image";
 import React from "react";
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex item-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+    <div id="about" className="w-full md:h-screen p-2 flex item-center py-16 flex justify-center items-center ">
+      <div className="max-w-[1240px] w-full h-full  m-auto md:grid grid-cols-3 gap-8">
+        <div className="col-span-3 ">
           <p className=" uppercase text-xl tracking-widest text-[#5651e5]">About </p>
           <h2 className="py-2">Who I Am</h2>
           <p className="py-2 text-gray-600">  I am not your normal developer </p>
           <p className="py-2 text-gray-600">
-            I have spent the last 4 years in the fire service working as a
-            professional firefighter & paramedic. 1 have always had a knack for
-            technology and working with computers. In 2019 I started working
-            with HTML & CSS to make some minor edits on a small business website
-            that I was operating. What I thought was just a few small edits
-            turned into a love for programming.
+
+            I have spent the last 5 years as a professional front end developer.
           </p>
           <p className="py-2 text-gray-600">
-            Fascinated with how intricate
-            programming can be I was quickly drawn to learn more. I started
-            learning javascript and was even more enthused with making websites
-            interactive. I then started freelancing for e-commerce companies on
-            the Shopify platform. I am now spending my time building projects
-            with React JS, Firebase, and learning new technologies.
+
+            i have always had a knack for technology and working with computers.
+            In the end of 2016 I started learning HTML & CSS .
+            also i was working in the private company as banner designer at the same time
+            .What I thought was just a few small edits turned into a love for programming.
+            Fascinated with how intricate programming can be I was quickly drawn to learn more.
+            I started learning javascript and was even more enthused with making websites interactive.
+            so i learned Angular framework. I am now spending my time building projects with React JS, nextjs,
+            and learning new technologies.
           </p>
           <p className="py-2 text-gray-600 underLine cursor-pointer">check out some of my latest project</p>
         </div>

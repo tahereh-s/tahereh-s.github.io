@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           .{" "}
-          <Image src="/tt.svg" alt="/" width={100} height={100} priority />
+          <Image src="/tt.svg" alt="/" width={100} height={100} priority className="mb-4" />
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -132,7 +132,7 @@ const Navbar = () => {
                 <li onClick={() => setNav(false)} className="py-4 text-sm">contact</li>
               </Link>
             </ul>
-            <div className="pt-40">
+            <div className="pt-10">
               <p className="uppercase tracking-widset text-[#5651e5]">
                 Lets connect
               </p>

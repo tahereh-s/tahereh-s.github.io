@@ -26,17 +26,12 @@ const okalaSite = () => {
           <p className="uppercase text-3xl text-[#5651e5] font-bold">Project</p>
           <h2 className="uppercase text-3xl py-4 font-extrabold	">Overview</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is avallable so you can signup & signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Z1lLow API.
+            This app was built using React JS and Nextjs. Users
+            are able to search products based on an store and see price of each product. You will
+            be able to view your basket and history of your orders.
           </p>
-          <button className="px-4 py-2 mt-4 mr-8 uppercase text-bold font-2xl">Demo</button>
-          <button className="px-4 py-2 mt-4 uppercase">Code</button>
+          {/* <button className="px-4 py-2 mt-4 mr-8 uppercase text-bold font-2xl">Demo</button>
+          <button className="px-4 py-2 mt-4 uppercase">Code</button> */}
 
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -60,9 +55,10 @@ const okalaSite = () => {
 
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">
+          {/* <p className="underline cursor-pointer">
           Back
-          </p>
+          </p> */}
+          <button className="px-4 py-2 mt-4 mr-8 uppercase text-bold font-2xl">Back</button>
           </Link>
       </div>
     </div>
